@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive storytelling website featuring Biskit & Miskit — two cats who inspire creative living. Built with HTML, CSS, and JavaScript by Mst. Sadika Begum Urmi." />
+  <meta name="author" content="Mst. Sadika Begum Urmi" />
+  <title>Homelife with Biskit & Miskit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="image/biskit-and-miskit.jpg" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Homelife with Biskit & Miskit</h1>
+      <p>Meet the two special co-workers who make my every day perfect.</p>
+      <button id="explore-btn" aria-label="Explore story section">Explore</button>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="story-section">
+    <h2>Our Story</h2>
+    <p>
+      Biskit and Miskit are not just cats — they are the heartbeat of my home where i have to stay whole day-night.
+      Between coding sessions and coffee breaks, they are my chaos, my calm,
+      and my constant inspiration. While sleeping, they sit by my side and sleep too which reduce my stress and give
+      me peace.
+    </p>
+    <button class="read-more-btn" aria-expanded="false" aria-controls="extra-text">Read More</button>
+    <div id="extra-text" class="hidden-text">
+      <p>
+        My apartment feels alive with them. From late-night keyboard naps to early morning
+        cuddles, every moment is a warm reminder that companionship does not always need words.
+        Their silent presence brings balance and joy into my work-from-home life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2>Cat Gallery</h2>
+    <div class="gallery-grid">
+      <img src="image/biskit-and-miskit.jpg" alt="Biskit and Miskit relaxing together" loading="lazy" />
+      <img src="image/miskit-1.jpg" alt="Miskit playing with toy" loading="lazy" />
+      <img src="image/miskit-3.jpg" alt="Miskit looking curiously at something" loading="lazy" />
+      <img src="image/biskit-6.jpg" alt="Biskit lounging comfortably" loading="lazy" />
+      <img src="image/biskit-3.jpg" alt="Biskit gazing outside the window" loading="lazy" />
+      <img src="image/both.jpg" alt="Both cats sitting side by side" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Want to talk about cats or web design? Drop me a message below!</p>
+
+    <form id="contactForm" novalidate>
+      <label for="name" class="visually-hidden">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+      <label for="message" class="visually-hidden">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit" aria-label="Send message">Send</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Created by <strong>Mst. Sadika Begum Urmi</strong> | Front-End Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
